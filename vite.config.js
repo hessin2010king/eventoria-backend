@@ -5,17 +5,16 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/js/app.js', // Your main JavaScript file
-                'resources/css/app.css', // Your main CSS file
-                'node_modules/admin-lte/dist/css/adminlte.min.css', // AdminLTE CSS
-                // Removed FullCalendar CSS and JS as they're loaded from CDN
-                'node_modules/admin-lte/plugins/jquery/jquery.min.js', // jQuery
-                'node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js', // Bootstrap JS
-                'node_modules/admin-lte/dist/js/adminlte.min.js', // AdminLTE JS
+                'resources/js/app.js', // Main JavaScript file
+                'resources/css/app.css', // Main CSS file
+                // AdminLTE assets
+                'node_modules/admin-lte/dist/css/adminlte.min.css',
+                'node_modules/admin-lte/plugins/jquery/jquery.min.js',
+                'node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js',
+                'node_modules/admin-lte/dist/js/adminlte.min.js',
             ],
-            output: 'public/build', // Ensure this path is correct
-
-            refresh: true,
+            output: 'public/build', // Output directory for built assets
+            refresh: true, // Enable live reload
         }),
     ],
 });
