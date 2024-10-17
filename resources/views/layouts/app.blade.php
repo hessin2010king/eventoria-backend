@@ -19,6 +19,10 @@
     ])
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auUjS6Gm2dqgo1pbWVkp1qI4FLakibk04wwxk" crossorigin="anonymous">
 
+        <!-- FullCalendar CSS from CDN -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.css" rel="stylesheet" />
+
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.1/fabric.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/konva/8.3.5/konva.min.js"></script>
@@ -48,12 +52,13 @@
 
     <!-- Vite will load JS dependencies -->
     @vite([
-        'node_modules/admin-lte/plugins/jquery/jquery.min.js',  // This includes jQuery
-        'node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js', // This includes Bootstrap
-        'node_modules/admin-lte/dist/js/adminlte.min.js',
-        'node_modules/@fullcalendar/core/main.min.js',
-        'node_modules/@fullcalendar/daygrid/main.min.js',
-        'node_modules/@fullcalendar/interaction/main.min.js'
+        @vite([
+    'node_modules/admin-lte/plugins/jquery/jquery.min.js',  // This includes jQuery
+    'node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js', // This includes Bootstrap
+    'node_modules/admin-lte/dist/js/adminlte.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.js', // FullCalendar JS from CDN
+    'https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/locales-all.min.js', // FullCalendar locales (optional)
+])
     ])
 
     @include('sweetalert::alert')
