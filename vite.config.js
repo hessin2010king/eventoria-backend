@@ -13,6 +13,8 @@ export default defineConfig({
                 'node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js', // Bootstrap JS
                 'node_modules/admin-lte/dist/js/adminlte.min.js', // AdminLTE JS
             ],
+            output: 'public/build', // Ensure this path is correct
+
             refresh: true,
         }),
     ],
