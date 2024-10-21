@@ -11,8 +11,8 @@
     @vite([
         'resources/js/app.js',
         'resources/css/app.css',
+
         'node_modules/admin-lte/dist/css/adminlte.min.css',
-        'node_modules/bootstrap/dist/css/bootstrap.min.css'  // Bootstrap via Vite
     ])
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Bootstrap Bundle (with Popper) via Vite -->
-    @vite(['node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'])
+   
 
     <!-- AdminLTE JS via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
