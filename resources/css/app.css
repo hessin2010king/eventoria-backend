@@ -1,7 +1,8 @@
-/* General styling for the calendar container */
-/* app.css */
 @import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'admin-lte/dist/css/adminlte.min.css';
+@import 'font-awesome/css/font-awesome.css';
 
+/* General styling for the calendar container */
 #calendar {
     border: 3px solid #007bff; /* Blue border around the entire calendar */
     border-radius: 10px; /* Rounded corners */
@@ -46,4 +47,3 @@
     border-color: #888; /* Darker border on hover */
     transform: scale(1.05); /* Slightly scale up on hover */
 }
-

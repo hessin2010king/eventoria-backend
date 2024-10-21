@@ -1,13 +1,8 @@
-import 'admin-lte/dist/css/adminlte.min.css';
-import 'font-awesome/css/font-awesome.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 import { Calendar } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import '../css/app.css';
-// app.js
-import 'bootstrap';
-
 
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
