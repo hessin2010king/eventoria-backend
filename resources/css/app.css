@@ -1,4 +1,6 @@
 /* General styling for the calendar container */
+/* app.css */
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 #calendar {
     border: 3px solid #007bff; /* Blue border around the entire calendar */
