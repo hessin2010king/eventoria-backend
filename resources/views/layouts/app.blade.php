@@ -10,19 +10,21 @@
     <!-- Load assets via Vite -->
     @vite([
          'resources/js/app.js',
-    'resources/css/app.css',
-    'node_modules/admin-lte/dist/css/adminlte.min.css', // Use this path
+         'resources/css/app.css',
+         'node_modules/admin-lte/dist/css/adminlte.min.css', // Use this path
     ])
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.css" />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auUjS6Gm2dqgo1pbWVkp1qI4FLakibk04wwxk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.css" />
 
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-DW8S4I5QGy1pM8phB27c+DWLOi7g8zYuvqlJq/lTp7d+K0zG2U6sFdWxIzB6oJ1a" 
+          crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.1/fabric.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/konva/8.3.5/konva.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body class="hold-transition h-auto">
@@ -44,27 +46,26 @@
         @include('partials.footer')
     </div>
 
-    <!-- Vite will load JS dependencies -->
-     <!-- jQuery via CDN -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-     <!-- Bootstrap Bundle (with Popper) via CDN -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-2T4cSLfn+hrP1mI8A+zbNe4sNHY9ksHgTpXh7o6SMvsD5Fhb3M3MTP0Y5cBIS4Zq" crossorigin="anonymous"></script>
- 
-     <!-- AdminLTE JS via CDN -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
- 
-     <!-- FullCalendar JS via CDN -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/locales-all.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/daygrid/main.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/interaction/main.min.js"></script>
- 
+    <!-- Bootstrap Bundle (with Popper) via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7d2xk6cTyHNUz1/z4/1vpc/mbkA7l7f5mbo4" 
+            crossorigin="anonymous"></script>
+
+    <!-- AdminLTE JS via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
+
+    <!-- FullCalendar JS via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/locales-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/daygrid/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/interaction/main.min.js"></script>
 
     @include('sweetalert::alert')
 
     <!-- Popper.js is only needed if you are using Bootstrap tooltips or popovers -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <!-- Note: The Bootstrap bundle already includes Popper.js -->
 </body>
 </html>
