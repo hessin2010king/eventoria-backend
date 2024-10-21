@@ -16,7 +16,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.1/fabric.min.js"></script>
+    <script src="{{ asset('js/fabric.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/konva/8.3.5/konva.min.js"></script>
 </head>
 
@@ -47,9 +47,9 @@
 
     <!-- FullCalendar JS via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/locales-all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/daygrid/main.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/interaction/main.min.js"></script>
+    <script src="{{ asset('js/locales-all.global.min.js') }}"></script>
+    <script src="{{ asset('js/daygrid/index.global.min.js') }}"></script>
+    <script src="{{ asset('js/interaction/index.global.min.js') }}"></script>
 
     @include('sweetalert::alert')
 
