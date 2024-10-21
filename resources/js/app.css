@@ -1,8 +1,4 @@
 /* General styling for the calendar container */
-@import 'admin-lte/dist/css/adminlte.min.css';
-@import 'admin-lte/plugins/fontawesome-free/css/all.min.css';
-@import 'admin-lte/plugins/bootstrap/css/bootstrap.min.css';
-
 
 #calendar {
     border: 3px solid #007bff; /* Blue border around the entire calendar */
