@@ -26,7 +26,10 @@ export default defineConfig({
         manifest: true,  // Ensure this is true
         outDir: 'public/build',  // Ensure the output directory is public/build
         rollupOptions: {
-          input: '/resources/js/app.js'  // Correct path to your main entry
-        }
+          input: [
+          '/resources/js/app.js' ,
+          '/resources/css/app.css' // Your main CSS file
+          // Correct path to your main entry
+        ]}
       }
 });
