@@ -9,11 +9,11 @@
 
     <!-- Load assets via Vite -->
     @vite([
-        'resources/js/app.js',
-        'resources/css/app.css',
-        'node_modules/admin-lte/plugins/bootstrap/css/bootstrap.min.css',
-        'node_modules/@fullcalendar/core/main.min.css',
-        'node_modules/@fullcalendar/daygrid/main.min.css'
+         'resources/js/app.js',
+    'resources/css/app.css',
+    'node_modules/admin-lte/dist/css/adminlte.min.css', // Use this path
+    'node_modules/@fullcalendar/core/main.min.css',
+    'node_modules/@fullcalendar/daygrid/main.min.css'
     ])
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auUjS6Gm2dqgo1pbWVkp1qI4FLakibk04wwxk" crossorigin="anonymous">
 
