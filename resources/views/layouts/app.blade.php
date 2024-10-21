@@ -45,14 +45,21 @@
     </div>
 
     <!-- Vite will load JS dependencies -->
-    @vite([
-        'node_modules/admin-lte/plugins/jquery/jquery.min.js',  // This includes jQuery
-        'node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js', // This includes Bootstrap
-        'node_modules/admin-lte/dist/js/adminlte.min.js',
-        'node_modules/@fullcalendar/core/main.min.js',
-        'node_modules/@fullcalendar/daygrid/main.min.js',
-        'node_modules/@fullcalendar/interaction/main.min.js'
-    ])
+     <!-- jQuery via CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+     <!-- Bootstrap Bundle (with Popper) via CDN -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-rbsA2VBK4qXXjzFU2GZxh0JhMTKi7N23CBY0GZjc1rIYROu9sEdpBUoh4PCD3l8z" crossorigin="anonymous"></script>
+ 
+     <!-- AdminLTE JS via CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
+ 
+     <!-- FullCalendar JS via CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/main.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/locales-all.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/daygrid/main.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.15/interaction/main.min.js"></script>
+ 
 
     @include('sweetalert::alert')
 
