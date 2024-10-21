@@ -6,6 +6,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import '../css/app.css';
 import 'admin-lte/plugins/fontawesome-free/css/all.min.css';
+import 'admin-lte/plugins/bootstrap/css/bootstrap.min.css';
 
 document.addEventListener('DOMContentLoaded', function () {
     const calendarEl = document.getElementById('calendar');
