@@ -11,7 +11,6 @@
     @vite([
         'resources/js/app.js',
         'resources/js/app.css',
-        'node_modules/admin-lte/dist/css/adminlte.min.css',
         'node_modules/admin-lte/plugins/fontawesome-free/css/all.min.css',
         'node_modules/admin-lte/plugins/bootstrap/css/bootstrap.min.css',
         'node_modules/@fullcalendar/core/main.min.css',
