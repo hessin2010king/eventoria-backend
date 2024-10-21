@@ -11,6 +11,7 @@
     @vite([
         'resources/js/app.js',
         'resources/css/app.css',
+        'node_modules/bootstrap/dist/css/bootstrap.min.css',
 
         'node_modules/admin-lte/dist/css/adminlte.min.css',
     ])
